@@ -1,0 +1,70 @@
+	/* 
+	------------------------------------------------
+	here are the nav styles relevent to this exercise 
+	------------------------------------------------
+	*/
+	nav{
+		background-color:#003399;
+		width:100%;	
+		/* 
+		when the user is at the top of the page, we want to 
+			float:left;
+		
+		when the user has scrolled past the header, we
+		will want to use fixed positioning to keep the nav visible
+		in the top left corner
+		
+				
+		*/
+		float:left;
+		
+	}
+	header{
+		/* 
+		the effective height of the header is 100px (80 + 10 padding-top + 10 padding-bottom)
+		this is the scroll distance we will use to trigger a 
+		re-positioning of the nav		
+		*/
+		height:80px;
+		padding:10px;
+	}
+	/* 
+	------------------------------------------------
+	the rest of these CSS rules are not 
+	relevent to completing the COMP1950 exercise
+	------------------------------------------------
+	*/
+	body, html{
+		height:100%;	
+		margin:0px;
+	}
+	header, header *{
+		background-color:#FF9933;	
+		margin:0px;
+	}
+	main, main *{
+		margin:0px;
+		padding:10px;
+	}
+
+	nav ul{
+		list-style-type:none;
+		padding:0px;
+		margin:0px;
+	}
+	nav li, nav li a{
+		display:block;
+		width:200px;
+		height:30px;
+		color:#99CCCC;
+		background-color:#003399;
+		text-align:center;
+		border:solid 1px #99CCCC;
+		border-width:0px 1px 0px 0px;
+		float:left;
+	}
+	nav li a:hover{
+		background-color:#99CCCC;
+		color:#003399;
+	}
+

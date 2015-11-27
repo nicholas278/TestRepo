@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>COMP1950 jQuery Scroll Detection Exercise</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+
+<!-- 
+**************************************************
+be sure to load the jQuery library before using jQuery! 
+**************************************************
+-->
+<script type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> 
+
+
+</script>
+<!-- 
+**************************************************
+now add our own jQuery 
+**************************************************
+-->
+<script type="text/javascript" 
+		src="js/sticky_nav.js"></script>
+		
+	</head>
+	<body>
+
+	
+<header>
+	<h1>COMP1950 jQuery Scroll Detection Exercise</h1>
+</header>	
+
+<!-- 
+we want this nav to 'stick' to the top of
+the browser when the user scrolls downward
+-->
+<nav>
+	<ul>
+		<li><a href="#">page one</a></li>
+		<li><a href="#">page two</a></li>
+		<li><a href="#">page three</a></li>
+		<li><a href="#">page four</a></li>
+	</ul>
+</nav>
+
+<main>
+	<section>
+	<h1>Main Section</h1>
+	<fieldset>
+		<legend>COMP1950 Exercise Challenge:</legend>
+		<ul>
+			<li>Examine the behavior of this page when scrolling away from the top of the page, and scrolling back again to the top. look for the span message created just below this fieldset for information on how jQuery is assessing the scroll</li>
+			<li>Examine the jQuery code embedded in this document. note how it uses scroll events to track the position of the scroll bar.</li>
+			<li>Use jQuery to alter the <code>nav</code> styles when the user scrolls away from the header, apply a fixed position to keep the <code>nav</code> fixed in the top left corner of the browser</li>
+			<li>Bonus challenge: when the user returns to the top of the page, use jQuery to return the <code>nav</code> to original left floated orientation. note: you will need to explicitly override the <code>fixed</code> positioning with <code>static</code> position, as well as reassigning the left floating</li>
+			<li>For further information, investigate <a href="https://api.jquery.com/scroll/">scroll</a> and <a href="https://api.jquery.com/scrollTop/">scrollTop</a></li>
+		</ul>
+	</fieldset>
+	
+	<!-- content will dynamically be appended to this span using jQuery -->
+	<span>Message from jQuery: </span>
+	
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum		ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum.orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	<p>Lorum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum... orum ipsum</p>
+	</section>
+</main>
+
+
+	
+	</body>
+</html>
+
+
